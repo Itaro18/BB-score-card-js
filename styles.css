@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1
+{
+    color: #fff;
+    font-size: 4vh;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.125rem;
+}
+
+body
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.scorecard
+{
+    background-color: #1b244a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 1/0.4;
+    padding: 3rem 2rem;
+}
+
+
+.board
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.score
+{
+    background-color: #080001;
+    color: #f94f6d;
+    font-size: 9vh;
+    padding: 0.5rem 2rem ;
+    border-radius: 0.5rem;
+    font-family: 'Silkscreen', cursive;
+}
+
+button
+{
+    font-size: 2.5vh;
+    border-radius: 0.5rem;
+    background-color: #1b244a;
+    border: 0.125rem solid #4b567f;
+    color: #4b567f;
+    padding: 0.25rem;
+    font-family: 'Silkscreen', cursive;
+}
+
+.pts
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.restart
+{   
+    font-size: 3vh;
+    padding: 0.5rem 1rem;
+    color: #f94f6d;
+}
+
+button+button
+{
+    margin-left: 0.25rem;
+}
+
+@media (max-width:1030px)
+{
+    .scorecard
+    {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    button+button
+    {
+        margin-left: 0.25rem;
+    }
+}

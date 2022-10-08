@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scoreard</title>
+</head>
+<body>
+    
+    <section class="scorecard">
+
+        <div class="home board">
+            <h1 class="team">HOME</h1>
+            <div id="home-score" class="score">
+                0
+            </div>
+            <div class="pts">
+                <button  onclick="add1h()" type="button">+1</button>
+                <button  onclick="add2h()" type="button">+2</button>
+                <button  onclick="add3h()" type="button">+3</button>
+            </div>
+        </div>
+
+        <button  onclick="reset()" class=" restart" type="button">RESTART</button>
+
+        <div class="guest board">
+            <h1 class="team">GUEST</h1>
+            <div id="guest-score" class="score">
+                0
+            </div>
+            <div class="pts">
+                <button  onclick="add1g()" type="button">+1</button>
+                <button  onclick="add2g()" type="button">+2</button>
+                <button  onclick="add3g()" type="button">+3</button>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+
+    </section>
+</body>
+</html>
